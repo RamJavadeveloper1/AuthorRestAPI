@@ -1,5 +1,6 @@
 package com.wizpanda
 import com.wizpanda.Book
+//import grails.gorm.hibernate.*
 class Author {
     String firstName;
     String lastName;
@@ -15,7 +16,9 @@ class Author {
         books joinTable: [name: "author_books", key: 'author_id']
         books cascade: 'all-delete-orphan'
         address cascade: 'all-delete-orphan'
-        //address lazy: false
+        books lazy: false
+        address fetch : 'join'
+
         //version false
     }
 }

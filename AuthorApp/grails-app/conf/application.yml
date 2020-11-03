@@ -52,7 +52,7 @@ grails:
             hal:
               - application/hal+json
               - application/hal+xml  
-            xml:
+            xml: 
               - text/xml
               - application/xml                                 
             atom: application/atom+xml
@@ -61,7 +61,8 @@ grails:
             js: text/javascript
             rss: application/rss+xml
             text: text/plain
-            all: '*/*'            
+            all: '*/*' 
+
     urlmapping:
         cache:
             maxsize: 1000
@@ -69,6 +70,8 @@ grails:
         defaultScope: singleton
     converters:
         encoding: UTF-8
+    cors:
+        enabled: true    
 
 ---
 hibernate:
@@ -81,8 +84,8 @@ dataSource:
     jmxExport: true
     driverClassName: com.mysql.jdbc.Driver  #org.h2.Driver
     dialect: org.hibernate.dialect.MySQL8Dialect #org.hibernate.dialect.MySQL5InnoDBDialect
-    username: root  #sa
-    password: PASSWORD # ''
+    username: ram  #sa
+    password: ram@12345 # ''
 
 environments:
     development:

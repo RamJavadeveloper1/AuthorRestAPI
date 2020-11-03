@@ -1,0 +1,8 @@
+import com.wizpanda.Book
+
+model {
+	Iterable<Book> bookList
+}
+
+json tmpl.book(bookList ?: [])
+

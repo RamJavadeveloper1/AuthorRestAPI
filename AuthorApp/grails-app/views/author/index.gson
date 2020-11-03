@@ -1,0 +1,9 @@
+import com.wizpanda.Author
+
+model {
+	Iterable<Author> authorList
+}
+
+json tmpl.author(authorList ?: [])
+
+

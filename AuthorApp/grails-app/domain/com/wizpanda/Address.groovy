@@ -1,6 +1,7 @@
 package com.wizpanda
-
-class Address {
+//import grails.gorm.hibernate.*
+//implements HibernateEntity<Author>
+  class Address {
 
     String city;
     String addressLine1;

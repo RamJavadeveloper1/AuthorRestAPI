@@ -1,0 +1,14 @@
+import com.wizpanda.Address
+
+model {
+	Address address
+}
+
+json {
+	city address.city
+    addressLine1 address.addressLine1
+    addressLine2 address.addressLine2
+    state address.state
+    country address.country
+}
+

@@ -1,0 +1,14 @@
+import com.wizpanda.Author
+
+model {
+	Author author
+}
+
+json.author {
+	firstName author.firstName
+	lastName author.lastName
+	address tmpl.address(author.address)
+	books tmpl.book(author.books)
+}
+
+
