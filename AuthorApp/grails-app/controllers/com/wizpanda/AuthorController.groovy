@@ -22,7 +22,6 @@ class AuthorController {
     }
 
     def save(Author author) {
-        println("author === "+author);
         respond AuthorService.save(author)
     }
 

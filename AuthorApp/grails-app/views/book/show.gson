@@ -4,4 +4,9 @@ model {
 	Book book
 }
 
-json tmpl.book(book)
+json { 
+	id book.id
+	title book.title
+} 
+
+//tmpl.book(book)

@@ -5,7 +5,9 @@ class Author {
     String firstName;
     String lastName;
     Address address;
+    
     static hasMany = [books:Book]
+    static mappedBy = [books: 'none']
 
     static constraints = {
         firstName blank: false, nullable: false

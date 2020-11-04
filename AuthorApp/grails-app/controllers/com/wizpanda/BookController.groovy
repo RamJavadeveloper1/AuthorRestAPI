@@ -24,12 +24,12 @@ class BookController {
     }
 
     def save(Book book) {
-        println("book === "+book);
         respond BookService.save(book)
     }
 
     def delete(Long id) {
-        respond BookService.delete(id) 
+        BookService.delete(id) 
+        respond BookService.list()
     }
 
     def update(Book book){

@@ -21,7 +21,7 @@ class BookService {
     }
 
     def delete(id) {
-        Book.get(id).delet()
+        Book.get(id).delete()
     }
 
     def get(id){

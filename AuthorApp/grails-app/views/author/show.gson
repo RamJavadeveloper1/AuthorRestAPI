@@ -4,7 +4,7 @@ model {
 	Author author
 }
 
-json.author {
+json {
 	firstName author.firstName
 	lastName author.lastName
 	address tmpl.address(author.address)
